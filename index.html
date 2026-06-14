@@ -1,76 +1,78 @@
 <!DOCTYPE html>
-<html lang="zh-ch">
+<html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=div, initial-scale=1.0">
-	<meta name="title" content="3D Cube - For Crush | Aoudumber Bade">
-    <meta name="github" content="https://github.com/Aoudumber-Bade">
-	<link rel="stylesheet" href="./css/program.css">
-	<title>3D Cube - For Crush | Aoudumber Bade</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="3D Cube - For Crush">
+    <link rel="stylesheet" href="./css/program.css">
+    <script src="./js/program.js" defer></script>
+    <title>3D Cube - For Crush</title>
 </head>
 
-<body>
-	<div class="title">
-		I Love You 💗
-	</div>
+<body class="intro-active">
+    <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-glow" aria-hidden="true"></div>
+        <div class="intro-content">
+            <div class="intro-heart" aria-hidden="true">&#10084;</div>
+            <p class="intro-kicker">Hey, my love...</p>
+            <h1 id="intro-title">I made something just for you.</h1>
+            <p class="intro-message">
+                A little world where our memories can live forever.
+            </p>
+            <button class="intro-button" type="button">
+                <span>Enter Our Little World</span>
+                <span class="intro-button-heart" aria-hidden="true">&#10084;</span>
+            </button>
+        </div>
+    </section>
 
-	<div class="cube">
-		
-		<div class="outer-cube">
-			<div class="outer-top">
-				<img src="images/r1.jpg" />
-			</div>
-			<div class="outer-bottom">
-				<img src="images/r2.png" />
-			</div>
-			<div class="outer-front">
-				<img src="images/r-3.jpg" />
-			</div>
-			<div class="outer-back">
-				<img src="images/r1.jpg" />
-			</div>
-			<div class="outer-left">
-				<img src="images/r2.png" />
-			</div>
-			<div class="outer-right">
-				<img src="images/r-3.jpg" />
-			</div>
-		</div>
-		<!-- 内层立方体 -->
-		<div class="inner-cube">
-			<div class="inner-top">
-				<img src="images/r1.jpg" />
-			</div>
-			<div class="inner-bottom">
-				<img src="images/r2.png" />
-			</div>
-			<div class="inner-front">
-				<img src="images/r-3.jpg" />
-			</div>
-			<div class="inner-back">
-				<img src="images/r1.jpg" />
-			</div>
-			<div class="inner-left">
-				<img src="images/r2.png" />
-			</div>
-			<div class="inner-right">
-				<img src="images/r-3.jpg" />
-			</div>
-		</div>
-	</div>
-	<div>
-		<div class="message">
-			<div class="tip">
-				<!-- Tip: Move the mouse in and out of the cube and the effect will be displayed! -->
-			</div>
-		</div>
-	</div>
+    <div class="floating-hearts" aria-hidden="true">
+        <span style="--x: 12%; --delay: -2s; --duration: 10s; --size: 18px;">&#10084;</span>
+        <span style="--x: 27%; --delay: -7s; --duration: 13s; --size: 12px;">&#10084;</span>
+        <span style="--x: 43%; --delay: -4s; --duration: 11s; --size: 22px;">&#10084;</span>
+        <span style="--x: 58%; --delay: -9s; --duration: 15s; --size: 14px;">&#10084;</span>
+        <span style="--x: 72%; --delay: -5s; --duration: 12s; --size: 19px;">&#10084;</span>
+        <span style="--x: 87%; --delay: -11s; --duration: 16s; --size: 11px;">&#10084;</span>
+    </div>
 
-	<div id="copy">
-		<p class="text-center text-white text-sm">OG Creator <a
-			href="https://www.instagram.com/aoudumber.dev/reels/#">@aoudumber.dev</a></p>
-	  </div>
+    <audio class="background-music" loop preload="auto">
+        <source src="./LoveTree/index_files/music.mp3" type="audio/mpeg">
+    </audio>
+    <button class="music-toggle" type="button" aria-pressed="false" aria-label="Turn music on">
+        <span class="music-icon" aria-hidden="true">&#9835;</span>
+        <span class="music-label">Music Off</span>
+    </button>
+
+    <div class="title">I Love You &#10084;</div>
+
+    <main class="love-scene">
+        <section class="cube-panel">
+            <div class="cube" aria-label="Drag to rotate the photo cube">
+                <div class="outer-cube">
+                    <div class="outer-top"><img src="images/r1.jpg" alt=""></div>
+                    <div class="outer-bottom"><img src="images/r2.png" alt=""></div>
+                    <div class="outer-front"><img src="images/r-3.jpg" alt=""></div>
+                    <div class="outer-back"><img src="images/r1.jpg" alt=""></div>
+                    <div class="outer-left"><img src="images/r2.png" alt=""></div>
+                    <div class="outer-right"><img src="images/r-3.jpg" alt=""></div>
+                </div>
+                <div class="inner-cube">
+                    <div class="inner-top"><img src="images/r1.jpg" alt=""></div>
+                    <div class="inner-bottom"><img src="images/r2.png" alt=""></div>
+                    <div class="inner-front"><img src="images/r-3.jpg" alt=""></div>
+                    <div class="inner-back"><img src="images/r1.jpg" alt=""></div>
+                    <div class="inner-left"><img src="images/r2.png" alt=""></div>
+                    <div class="inner-right"><img src="images/r-3.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tree-panel" aria-label="Love tree">
+            <iframe data-src="./LoveTree/index.html" title="Love tree"></iframe>
+        </section>
+    </main>
+
 </body>
 
 </html>
